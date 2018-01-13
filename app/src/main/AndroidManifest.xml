@@ -22,8 +22,10 @@
         <activity
             android:name=".Activity.VerificationActivity"
             android:label="Verify your phone number" />
-        <activity android:name=".Activity.VerifiedActivity" />
-        <activity android:name=".Activity.SetupPinActivity"></activity>
+        <activity android:name=".Activity.VerifiedActivity"
+            android:label="Verify your phone number"/>
+        <activity android:name=".Activity.SetupPinActivity"
+            android:label="Setup PIN"></activity>
     </application>
 
 </manifest>

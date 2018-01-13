@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="@dimen/_10sdp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,6 +32,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
 
                 <RelativeLayout
@@ -48,13 +51,31 @@
                         android:background="@drawable/pin_gray_bg"
                         android:gravity="center"
                         android:maxEms="1"
-                        android:padding="10dp"
                         android:text="1"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/pin_gray_bg"
+                        android:gravity="center"
+                        android:maxEms="1"
+                        android:text="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
@@ -66,13 +87,13 @@
                         android:background="@drawable/pin_gray_bg"
                         android:gravity="center"
                         android:maxEms="1"
-                        android:padding="10dp"
                         android:text="1"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
@@ -84,25 +105,6 @@
                         android:background="@drawable/pin_gray_bg"
                         android:gravity="center"
                         android:maxEms="1"
-                        android:padding="10dp"
-                        android:text="1"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="@dimen/_50sdp"
-                        android:layout_weight="1"
-                        android:background="@drawable/pin_gray_bg"
-                        android:gravity="center"
-                        android:maxEms="1"
-                        android:padding="10dp"
                         android:text="7"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -117,7 +119,9 @@
             android:background="@color/gray" />
 
         <LinearLayout
+            android:layout_weight="1"
             android:orientation="vertical"
+            android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -125,10 +129,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:gravity="center_vertical"
                 android:paddingLeft="@dimen/_60sdp"
-                android:paddingRight="@dimen/_60sdp"
-                android:paddingBottom="@dimen/_10sdp"
-                android:paddingTop="@dimen/_10sdp">
+                android:paddingRight="@dimen/_60sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -381,22 +384,24 @@
                     </RelativeLayout>
 
                 </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
+
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/gray" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="vertical">
 
             <RelativeLayout
+                android:padding="@dimen/_20sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal">

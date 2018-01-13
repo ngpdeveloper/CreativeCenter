@@ -29,7 +29,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -41,13 +41,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:background="@color/dark_gray"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="15dp"
+            android:paddingTop="@dimen/_15sdp"
             android:layout_height="wrap_content" >
             <EditText
                 android:hint="Enter mobile number"
@@ -60,7 +60,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <RelativeLayout
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -76,7 +76,7 @@
             android:id="@+id/txt_continue"
             android:text="accept and continue"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/rectangle_bg"
             android:padding="10dp"

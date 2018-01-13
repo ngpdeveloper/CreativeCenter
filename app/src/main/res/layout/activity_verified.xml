@@ -12,39 +12,44 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <RelativeLayout
-            android:background="@drawable/circular_outline"
-            android:padding="30dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/ic_check_mark"
-                android:layout_width="40dp"
-                android:layout_height="40dp" />
-        </RelativeLayout>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:text="Phone number veriied"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="+91 80215785"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
         <LinearLayout
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@drawable/circular_outline"
+                android:padding="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_check_mark"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Phone number veriied"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="+91 80215785"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -54,9 +59,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"/>
             <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:text="On next screen ,you will setup a 4 digit accoun PIN to conirm all future transactions"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="On next screen ,you will setup a 4 digit account PIN to confirm all future transactions"
                 android:textColor="@color/black"
                 android:textSize="17sp"
                 android:padding="@dimen/_5sdp"
@@ -69,25 +74,31 @@
                 android:layout_height="1dp"/>
 
             <TextView
-                android:layout_marginTop="30dp"
-                android:textSize="11sp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textSize="@dimen/_11sdp"
                 android:textColor="@color/black"
                 android:textStyle="italic"
+                android:gravity="center"
                 android:layout_gravity="center_horizontal"
                 android:text="Please do NOT share your PIN with anyone including Creativecenter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/txt_setPin"
                 android:text="setup account PIN"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center_horizontal|center_vertical"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/rectangle_bg"
-                android:padding="15dp"
-                android:layout_marginTop="@dimen/_30sdp"
+                android:padding="@dimen/_15sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>

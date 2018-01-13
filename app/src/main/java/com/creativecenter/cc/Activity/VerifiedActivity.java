@@ -3,6 +3,7 @@ package com.creativecenter.cc.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,7 +17,7 @@ public class VerifiedActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verified);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setView();
         setlistner();
     }
@@ -38,5 +39,14 @@ public class VerifiedActivity extends AppCompatActivity implements View.OnClickL
                 break;
         }
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()==android.R.id.home)
+        {
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
