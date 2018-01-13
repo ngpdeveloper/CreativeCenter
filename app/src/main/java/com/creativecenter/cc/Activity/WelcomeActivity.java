@@ -1,4 +1,4 @@
-package com.creativecenter.cc;
+package com.creativecenter.cc.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +17,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.creativecenter.cc.PrefrenceManager;
+import com.creativecenter.cc.R;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -122,7 +125,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setIsFirstTime(false);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, VerificationActivity.class));
         finish();
     }
 

@@ -1,8 +1,10 @@
-package com.creativecenter.cc;
+package com.creativecenter.cc.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.creativecenter.cc.R;
 
 public class SplashActiivty extends AppCompatActivity {
 
