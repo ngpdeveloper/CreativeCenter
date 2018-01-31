@@ -20,12 +20,13 @@
             android:padding="@dimen/_10sdp">
 
             <TextView
+                android:id="@+id/txt_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:padding="@dimen/_5sdp"
-                android:text="Confirm your PIN"
+                android:text="Enter your PIN"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="@color/black" />
 
@@ -45,13 +46,13 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/txt1"
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_50sdp"
                         android:layout_weight="1"
                         android:background="@drawable/pin_gray_bg"
                         android:gravity="center"
                         android:maxEms="1"
-                        android:text="1"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -63,13 +64,13 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/txt2"
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_50sdp"
                         android:layout_weight="1"
                         android:background="@drawable/pin_gray_bg"
                         android:gravity="center"
                         android:maxEms="1"
-                        android:text="1"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -81,13 +82,13 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/txt3"
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_50sdp"
                         android:layout_weight="1"
                         android:background="@drawable/pin_gray_bg"
                         android:gravity="center"
                         android:maxEms="1"
-                        android:text="1"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -99,13 +100,13 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/txt4"
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_50sdp"
                         android:layout_weight="1"
                         android:background="@drawable/pin_gray_bg"
                         android:gravity="center"
                         android:maxEms="1"
-                        android:text="7"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -139,17 +140,20 @@
                     android:orientation="horizontal">
 
                     <RelativeLayout
+                        android:id="@+id/ll_num1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num1"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="1"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -157,17 +161,20 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_num2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num2"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="2"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -175,17 +182,20 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_num3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num3"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="3"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -201,17 +211,20 @@
                     android:orientation="horizontal">
 
                     <RelativeLayout
+                        android:id="@+id/ll_num4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num4"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="4"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -219,6 +232,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_num5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_7sdp"
@@ -226,11 +240,13 @@
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num5"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="5"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -238,6 +254,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_num6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
@@ -246,11 +263,13 @@
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num6"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="6"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -266,17 +285,20 @@
                     android:orientation="horizontal">
 
                     <RelativeLayout
+                        android:id="@+id/ll_num7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num7"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="7"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -284,17 +306,20 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_num8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num8"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="8"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -302,17 +327,20 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_num9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num9"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="9"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -341,6 +369,7 @@
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="0"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -348,17 +377,20 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_num0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/num0"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
                             android:gravity="center"
                             android:text="0"
+                            android:clickable="true"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/_18sdp"
@@ -366,12 +398,14 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/ll_delete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center_horizontal">
 
                         <TextView
+                            android:id="@+id/txt_delete"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:background="@drawable/pin_blue_bg"
